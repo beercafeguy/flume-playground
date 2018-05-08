@@ -15,3 +15,14 @@ telnet <hostname> <port-number>
 telnet flumehost.beercafeguy.com 44444
 
 flume-ng agent --name log-agent --conf-file exec-memory-hdfs.conf
+
+flume-ng agent \
+--classpath "/user/beercafeguy/code/flume/lib/*" \
+--name mp-agent \
+--conf-file multiplexed_agent.conf
+
+
+flume-ng agent \
+--name fk-agent \
+--conf-file flume_kafka_agent.conf
+
