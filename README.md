@@ -26,3 +26,4 @@ flume-ng agent \
 flume-ng agent \
 --name fk-agent \
 --conf-file flume_kafka_agent.conf
+```
